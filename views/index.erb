@@ -1,0 +1,25 @@
+<div class='jumbotron'>
+	<h1>Welcome to ShoeClub!</h1>
+	<h4> (First rule of ShoeClub: <em>ALWAYS</em> talk about ShoeClub!)</h4>
+</div>	
+
+<h2>These are all of the Stores in ShoeClub:</h2>
+<h4> <em>click on a store to see what brands they carry<em><h4>
+
+<% if @stores.any?() %>
+<% @stores.each() do |store| %>
+<ul>
+  <li><a href='/store/<%=store.id()%>'> <%=store.name()%></a></li>
+</ul>
+<%end%>
+<%else %>
+<p> There are no stores yet.</p>
+<%end%>
+
+<form action='/' method='post'>
+    <label for='name'/></label>
+    <input id='name' name='name' placeholder="enter new store" type='text'>
+  <button type='submit' class='btn btn-info'>Add a Store to ShoeClub</button>
+</form>
+
+

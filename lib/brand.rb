@@ -8,6 +8,7 @@ class Brand < ActiveRecord::Base
 	private
 
 	def titlecase_description
-		self.name = (description.titlecase)
+		self.description = (description.titlecase)
 	end
 end
+
