@@ -2,6 +2,9 @@
 	
 	text-align: center;
 	background-color: 	#66CCFF;
+	font-family: 'Tangerine', serif;
+    font-size: 70px;
+
 	
 	
 }
@@ -24,4 +27,10 @@ ul {
 div {
 
 	align-content: center;
+}
+
+.background {
+<img src="img/'shoes.jpg'
+  -webkit-background-size: cover;  ;)no-repeat center fixed;
+  -webkit-background-size: cover;  ;
 }

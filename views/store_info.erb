@@ -2,10 +2,11 @@
 
 <h2>Here are the Shoe Brands in: <%= @store.name %></h2>
 <br>
-  <ul>
+  
    <%  if @store.brands.any?  %>
    <% @store.brands.each do |brand| %>
-    <li><a href="/brands/<%= brand.id %>"><%= brand.description %></a></li>
+  <ul>
+    <li><sl><%= brand.description %></sl></li>
   </ul> 
    <% end %>
    <% else %>
